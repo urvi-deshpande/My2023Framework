@@ -1,5 +1,7 @@
 package com.qa.opencart.tests;
 
+import java.util.Random;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,11 +21,12 @@ public class LoginPageNegativeTest extends BaseTest{
 
 	@DataProvider
 	public Object[][] getLoginNegativeData() {
+		Random random = new Random();
 		return new Object[][] {
-			{"ajinkyapatil@gmail.com", "Srjnvkslbnfk1234"},
-			{"   ", "FKefndvkd1234$"},
-			{"aadgrm@gmail.com", "     "},
-			{"Fgugbvdj@gmail.com.com","abscd1234$"}
+//			{"deshpande.urvi30@gmail.com", "Srjnvkslbnfk1234"},
+//			{"   ", "FKefndvkd1234$"},
+			{"aadgrmgf" + random.nextInt(1000) + "@gmail.com", "     "},
+			{"Fgugbvdjfdfsa" +random.nextInt(1000) + "@gmail.com.com","abscd1234$"}
 		};
 	}
 	

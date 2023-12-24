@@ -18,7 +18,7 @@ public class SearchResultsPageTest extends BaseTest{
 
 	@BeforeClass
 	public void searchResultsPageSetup() {
-		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		accountsPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@Test

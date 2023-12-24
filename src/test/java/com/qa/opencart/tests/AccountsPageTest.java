@@ -53,9 +53,5 @@ public class AccountsPageTest extends BaseTest{
 
 	}
 
-
-
-
-
 	
 }
